@@ -21,7 +21,7 @@ interface ImageData {
 }
 interface apiResponse {
     total: number,
-    hits: [ImageData] | null,
+    hits: [ImageData],
 }
 
 const Gallery = () => {
