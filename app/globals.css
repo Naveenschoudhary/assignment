@@ -2,41 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 200 20% 98%;
-    --btn-background: 200 10% 91%;
-    --btn-background-hover: 200 10% 89%;
-    --foreground: 200 50% 3%;
-  }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: 200 50% 3%;
-      --btn-background: 200 10% 9%;
-      --btn-background-hover: 200 10% 12%;
-      --foreground: 200 20% 96%;
-    }
-  }
+
+
+.header-background {
+  border-radius: 8.906px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-@layer base {
-  * {
-    @apply border-foreground/20;
-  }
+button {
+  border-radius: 8.906px;
+  border: 2.672px solid #FFF;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.animate-in {
-  animation: animateIn 0.3s ease 0.15s both;
+.mainBtn{
+  border-radius: 8.906px;
+border: 2.672px solid #FFF;
+padding: 5px 10px;
 }
 
-@keyframes animateIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+.heroHeading{
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 3.563px 3.563px rgba(0, 0, 0, 0.25);
+  font-family: Euclid Circular B;
+  font-size: 71.25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87.638px; /* 123% */
+}
+h5{
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 3.563px 3.563px rgba(0, 0, 0, 0.25);
+  font-family: Euclid Circular B;
+  font-size:42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87.638px; /* 123% */
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none !important;
+}
+
+.btnPage{
+  padding: 10px 15px;
+  border: 1px solid;
+  border-radius: 2px !important;
+}
+
+.btnPage:hover{
+  background-color: black;
+  color: white !important;
+}
+
+.DialogContent {
+  min-width: 700px !important;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .DialogContent {
+    min-width: auto !important;
+    padding: 15px; 
   }
 }
