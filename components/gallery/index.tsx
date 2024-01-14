@@ -65,8 +65,8 @@ const Gallery = () => {
                         {data && data.length > 0 && data.map((data, i) => (
                             <>
                                 <button onClick={() => handleOpen(data)}>
-                                    <div className='max-w-[400px] max-h-[200px]'>
-                                        <Image src={data.webformatURL} alt='' width={700} height={500} className='w-[400px] h-[200px]' />
+                                    <div className='max-w-[400px] max-h-[300px]'>
+                                        <Image src={data.webformatURL} alt='' width={700} height={500} className='w-[400px] h-[300px] rounded-md' />
                                     </div>
                                 </button>
                             </>
