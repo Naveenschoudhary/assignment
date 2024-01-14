@@ -1,13 +1,11 @@
 import HeroSectionWrapper from '@/components/HeroSectionWrapper'
 import SearchBar from '@/components/SearchBar'
 import Gallery from '@/components/gallery'
-import { ImageModel } from '@/components/gallery/ImageModel'
+import { KeyWords } from '@/utils/Constant'
 import Link from 'next/link'
-import { useSearchParams } from 'next/navigation'
 import React from 'react'
 
 
-const KeyWords = ["backgrounds", "fashion", "nature", "science", "education", "feelings", "health", "people", "religion", "places", "animals", "industry", "computer", "food", "sports", "transportation", "travel", "buildings", "business", "music"];
 
 const page = ({
     params,
@@ -18,7 +16,7 @@ const page = ({
 }) => {
     const searchValue = searchParams?.search
     return (
-        <div>
+        <div className='h-full'>
             <HeroSectionWrapper searchPage={true}>
                 <div className='w-full flex items-center justify-center flex-col'>
                     <SearchBar />
