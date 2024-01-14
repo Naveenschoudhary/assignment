@@ -10,7 +10,7 @@ const HeroSectionWrapper = ({ children, searchPage = false }: { children: ReactN
                     position: 'relative',
                     width: '100vw'
                 }}
-                className={searchPage ? "h-[40vh] md:h-[60vh] lg:h-[60vh]" : "h-[40vh] md:h-[60vh] lg:h-[100vh]"}
+                className={searchPage ? "h-[40vh] md:h-[60vh] lg:h-[60vh]" : "h-[60vh] md:h-[80vh] lg:h-[100vh]"}
             >
                 <Image
                     src="https://tikaraja.com/assets/mainbg.webp"

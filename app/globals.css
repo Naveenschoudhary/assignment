@@ -39,6 +39,7 @@ padding: 5px 10px;
   font-weight: 700;
   line-height: 87.638px; /* 123% */
 }
+
 h5{
   color: #FFF;
   text-align: center;
@@ -74,6 +75,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 @media screen and (max-width: 700px) {
+  .heroHeading{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 87.638px; /* 123% */
+  }
   .DialogContent {
     min-width: auto !important;
     padding: 15px; 
